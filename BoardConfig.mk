@@ -102,7 +102,6 @@ BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOOT_KERNEL_MODULES := \
     goodix_core.ko \
     hwid.ko \
-    msm_drm.ko \
     xiaomi_touch.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
