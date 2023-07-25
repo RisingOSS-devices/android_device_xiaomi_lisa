@@ -58,6 +58,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+        vendor/bin/hw/dolbycodec2)
+            patchelf --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "${2}"
+            ;;
         vendor/etc/media_lahaina/video_system_specs.json \
         |vendor/etc/media_shima_v1/video_system_specs.json \
         |vendor/etc/media_yupik_v1/video_system_specs.json)
