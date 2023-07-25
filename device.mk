@@ -333,6 +333,8 @@ PRODUCT_PACKAGES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
+    libminijail \
+    libminijail.vendor \
     libavservices_minijail \
     libavservices_minijail.vendor
 
