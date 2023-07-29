@@ -587,6 +587,9 @@ vendor/bin/batterysecret
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
 
+# Display configs
+product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061762.xml
+
 # Graphics firmware
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
