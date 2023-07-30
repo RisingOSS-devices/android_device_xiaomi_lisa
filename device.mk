@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
+    libion.vendor \
     libMegviiFacepp-0.5.2 \
     libmegface
 
