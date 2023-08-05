@@ -70,9 +70,8 @@ function blob_fixup() {
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/etc/camera/pureShot_parameter.xml \
-        |vendor/etc/camera/pureView_parameter.xml)
-            sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
+        vendor/etc/camera/pure*_parameter.xml)
+            sed -i "s/=\([0-9]\+\)>/=\"\1\">/g" "${2}"
             ;;
         vendor/lib/libcodec2_hidl@1.0.stock.so)
             patchelf --set-soname libcodec2_hidl@1.0.stock.so "${2}"
