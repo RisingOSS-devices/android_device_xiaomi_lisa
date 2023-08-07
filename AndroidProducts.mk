@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_lisa.mk
+    $(LOCAL_DIR)/lineage_lisa.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_lisa-user \
-    voltage_lisa-userdebug \
-    voltage_lisa-eng
+    lineage_lisa-user \
+    lineage_lisa-userdebug \
+    lineage_lisa-eng

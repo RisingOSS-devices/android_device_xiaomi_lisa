@@ -395,7 +395,8 @@ PRODUCT_PACKAGES += \
 # Overlay-lineage
 PRODUCT_PACKAGES += \
     lisaApertureOverlay \
-    lisaLineageDialer
+    lisaLineageDialer \
+    lisaLineageSDK
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

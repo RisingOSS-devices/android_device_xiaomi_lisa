@@ -12,19 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
-
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1920
-
-# Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2109119DG
-PRODUCT_NAME := voltage_lisa
+PRODUCT_NAME := lineage_lisa
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
