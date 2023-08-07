@@ -91,4 +91,8 @@ void vendor_load_properties() {
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+
+    // Set RisingOS Stuff
+    property_override("ro.rising.maintainer", "Iascker (Mezaque Silva)");
+    property_override("ro.rising.chipset", "Snapdragon 778G");
 }
