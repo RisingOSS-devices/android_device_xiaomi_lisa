@@ -8,6 +8,10 @@
             <nits>2.0</nits>
         </point>
         <point>
+            <value>0.49975574</value>
+            <nits>500.0</nits>
+        </point>
+        <point>
             <value>1.0</value>
             <nits>800.0</nits>
         </point>
@@ -33,5 +37,18 @@
         <thermalStatusLimit>critical</thermalStatusLimit>
         <!-- Low power mode limitation for HBM -->
         <allowInLowPowerMode>true</allowInLowPowerMode>
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.0</sdrNits>
+                <hdrRatio>2.25</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>800.0</sdrNits>
+                <hdrRatio>2.25</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
     </highBrightnessMode>
+    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
 </displayConfiguration>
