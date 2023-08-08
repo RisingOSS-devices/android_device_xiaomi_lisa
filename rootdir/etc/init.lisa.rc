@@ -12,3 +12,7 @@ on boot && property:ro.boot.hwc=GL
 
 on boot && property:ro.boot.hwc=IN
     setprop bluetooth.device.default_name "Xiaomi 11 Lite NE"
+
+on post-fs
+    # Bind mount brightness node
+    mount none /sys/class/backlight/panel0-backlight/brightness /sys/class/mi_display/disp-DSI-0/brightness_clone bind
